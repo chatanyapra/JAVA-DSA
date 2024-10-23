@@ -1,9 +1,7 @@
 
-import java.util.Scanner;
+public class FloorOfNumberInBS {
 
-public class BinarySearch {
-
-    public static int binarySeaarch(int[] arr, int target) {
+    public static int floorNoBS(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
         while (start <= end) {
@@ -17,14 +15,14 @@ public class BinarySearch {
                 return mid;
             }
         }
-        return -1;
+        return end;
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 12, 15, 19, 55, 58, 78, 89, 99};
-        Scanner sc = new Scanner(System.in);
-        int target = sc.nextInt();
-        System.out.println("Binary search- ");
-        System.out.println(binarySeaarch(arr, target));
+        int[] arr = {1, 4, 7, 12, 14, 16, 19, 22};
+        // int[] arr = {22, 19, 16, 14, 12, 4, 2, 1};
+        int targ = 7;
+        int ans = floorNoBS(arr, targ);
+        System.out.println("Ans = " + ans);
     }
 }
