@@ -7,7 +7,11 @@ public class LinkedListClient {
         ll.addFirst(30);
         ll.addLast(40);
         ll.traverse();
-        ll.removeFirst();
+        // ll.removeLast();
+        // ll.removeAtIndex(2);
+        ll.reverseIterate();
         ll.traverse();
+        // ll.getValue(2);
+        // ll.getSize();
     }
 }
